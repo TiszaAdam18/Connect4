@@ -1,19 +1,20 @@
 package org.example;
 
 public class Player {
-    private String name;
-    private char disc;
+    private final String name;
+    private final char symbol;
 
-    public Player(String name, char disc) {
+    public Player(String name, char symbol) {
         this.name = name;
-        this.disc = disc;
+        this.symbol = symbol;
     }
 
     public String getName() {
         return name;
     }
 
-    public char getDisc() {
-        return disc;
+    public char getSymbol() {
+        return symbol;
     }
 }
+
